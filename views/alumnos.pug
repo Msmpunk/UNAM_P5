@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  include index/navbar
+  include index/footer
+  .container.ref__content
+    .login
+      h2 Para ingresar el registro ingrese los siguintes datos
+      form
+        .form-row
+          .form-group.col-md-12
+            label Numero de Cuenta(*)
+            input#inputCity.form-control(type='text')
+          .form-group.col-md-12
+            label Contraseña(*)
+            input#inputCity.form-control(type='text')
+          button.btn.btn-outline-dark(type='button') Registrarse
+        //- #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+        //-   .form-row
+        //-     .form-group.col-md-12
+        //-       label RFC
+        //-       input#inputCity.form-control(type='text')
+        //-     .form-group.col-md-12
+        //-       label Contraseña
+        //-       input#inputCity.form-control(type='password')
+        //-     button.btn.btn-outline-dark(type='button') Iniciar Sesión
+        //- #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+        //-   .form-row
+        //-     .form-group.col-md-12
+        //-       label Usuario
+        //-       input#inputCity.form-control(type='text')
+        //-     .form-group.col-md-12
+        //-       label Contraseña
+        //-       input#inputCity.form-control(type='password')
+        //-     button.btn.btn-outline-dark(type='button') Iniciar Sesión
