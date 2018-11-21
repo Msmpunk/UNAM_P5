@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  include index/navbar
+  include index/footer
+  .container.formulario
+    form
+      .form-row
+        .form-group.col-md-6
+          label Nombre(*)
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label Apellido Paterno(*)
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-2
+          label Apellido Materno(*)
+          input#inputCity.form-control(type='text')
+        .form-check.col-md-4
+          label(for='inputState') Sexo(*)
+          select#inputState.form-control
+            option(selected='')
+            option Hombre
+            option Mujer
+        .form-group.col-md-4
+          label Telefono
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label Edad(*)
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label CURP(*)
+          input#inputCity.form-control(type='text')
+      .form-row
+        .form-group.col-md-4
+          label Calle(*)
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label Colonia(*)
+          input#inputCity.form-control(type='text')
+      .form-row
+        .form-group.col-md-4
+          label Manzana
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label Lote
+          input#inputCity.form-control(type='text')
+        .form-group.col-md-4
+          label Codigo Postal(*)
+          input#inputCity.form-control(type='text')
+      .form-row
+        .form-group.col-md-4
+          label Delegación o Municipio(*)
+          input#inputCity.form-control(type='text')
+  .container
+    nav(aria-label='Page navigation example ')
+      ul.pagination.float-right(style='float: right;')
+        li.page-item
+          a.page-link(href='#') Anterior
+        li.page-item
+          a.page-link(href='#') 1
+        li.page-item
+          a.page-link(href='#') 2
+        li.page-item
+          a.page-link(href='#') 3
+        li.page-item
+          a.page-link(href='#') Siguiente
